@@ -1,0 +1,81 @@
+<html>
+<body style="background-color: turquoise;">
+	<div
+		style="display: table-cell; vertical-align: middle; text-align: center">
+		<img align="middle" src="./images/sbm.jpg" height="200" width="200" />
+	</div>
+	<font color="deeppink"><h1>
+			<marquee>
+				<b>STATE BANK OF INDIA</b>
+			</marquee>
+		</h1></font>
+	<font color="Navy"><h1 align="left">
+			<i><u>New User Registration</u></i>
+		</h1></font>
+
+	<form action="./newuser1.do" method="post">
+
+		<p align="right">
+			<font color="red" size="3">Fields with * are mandatory</font>
+		</p>
+		<font color="Navy" size="6" style="margin: 3cm;"><u><b>Personal
+					Details:</b></u></font>
+		<table align="left" border="0" style="margin-left: 3cm">
+			<col width="800">
+			<col width="1300">
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your
+						FirstName<sup>*</sup>
+				</font></td>
+				<td><input type="text" name="fname" required="required" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your
+						LastName<sup>*</sup>
+				</font></td>
+				<td><input type="text" name="lname" required="required" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your
+						UserName<sup>*</sup>
+				</font></td>
+				<td><input type="text" name="uname" required="required" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your
+						Password<sup>*</sup>
+				</font></td>
+				<td><input type="password" name="pwd" required="required"
+					maxlength="8" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Re-enter Password<sup>*</sup></font></td>
+				<td><input type="password" name="rpwd" required="required"
+					maxlength="8" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your
+						DOB(dd/mm/yyyy)<sup>*</sup>
+				</font></td>
+				<td><input type="date" pattern="\d{1,2}/\d{1,2}/\d{4}/"
+					name="dob" required="required" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your Age<sup>*</sup></font></td>
+				<td><input type="text" name="age" required="required" min="8"
+					maxlength="3" /></td>
+			</tr>
+			<tr>
+				<td><font size="4" color="darkviolet">Enter your Gender<sup>*</sup></font></td>
+				<td><input type="radio" name="gender" value="male" />Male <input
+					type="radio" name="gender" value="female" />Female <input
+					type="radio" name="gender" value="others" />Others</td>
+			</tr>
+			<tr>
+				<td align="right"><input type="reset" value="RESET"></td>
+				<td><input type="submit" value="NEXT" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

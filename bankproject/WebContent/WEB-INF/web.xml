@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<welcome-file-list>
+		<welcome-file>/html/login.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>bank</servlet-name>
+		<servlet-class>com.cluster.controller.BankProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bank</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<filter-name>filter1</filter-name>
+		<filter-class>com.cluster.controller.Filter1</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter1</filter-name>
+		<url-pattern>/newuser1.do</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>filter2</filter-name>
+		<filter-class>com.cluster.controller.Filter2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter2</filter-name>
+		<url-pattern>/newuser2.do</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>filter3</filter-name>
+		<filter-class>com.cluster.controller.Filter3</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter3</filter-name>
+		<url-pattern>/newuser3.do</url-pattern>
+	</filter-mapping>
+</web-app>
